@@ -2,17 +2,18 @@
   <div>
     <app-header />
     <Nuxt />
+    <app-footer />
 
-    <footer>
-        <p>&copy; 2021 All Right Reserved</p>
-    </footer>
   </div>
 </template>
 <script>
-import header from '@/components/layouts/header.vue'
+import Header from '@/components/layouts/Header.vue'
+import Footer from '@/components/layouts/Footer.vue'
 export default {
     components: {
-        'app-header' : header
+        'app-header' : Header,
+        'app-footer' : Footer
+
     }
 }
 </script>
